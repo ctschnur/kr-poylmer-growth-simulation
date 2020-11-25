@@ -1,0 +1,74 @@
+{
+    "DEFAULT": {
+        "conversions_to_save_clds_at": [
+            0.4,
+            0.6,
+            0.8
+        ],
+        "I_0": 0.001,
+        "M_0": 8.43,
+        "k_fm": 0.091,
+        "k_fp": 0.5,
+        "k_I": 1.2e-06,
+        "k_p": 500,
+        "k_pstar": 0.00,
+        "k_tc": 6000000.0,
+        "k_td": 6000000.0,
+        "eta": 1.0,
+        "imax": 400,
+        "nbar_imax": 1000000.0,
+        "t_step": 10.0
+    },
+    "FIG11": {
+        "conversions_to_save_clds_at": [
+            0.8
+        ],
+        "k_fp": 0.0,
+        "k_td": 0.0,
+        "k_pstar": 0.05
+    },
+    "FIG05-1000": {
+        "conversions_to_save_clds_at": [
+            0.6
+        ],
+        "k_pstar": 0.0,
+        "k_tc": 0.0,
+        "imax": 1000
+    },
+    "FIG05-400": {
+        "conversions_to_save_clds_at": [
+            0.6
+        ],
+        "k_pstar": 0.0,
+        "k_tc": 0.0,
+        "imax": 400
+    },
+    "FIG04": {
+        "conversions_to_save_clds_at": [
+            0.6, 
+            0.8
+        ],
+        "k_pstar": 0.0,
+        "k_tc": 0.0
+    },
+    "FIG06": {
+        "conversions_to_save_clds_at": [
+            0.4,
+            0.8
+        ],
+        "k_pstar": 0.0,
+        "k_td": 0.0,
+        "k_tc": 6e6,
+        "imax": 400,
+        "nbar_imax": 2e6
+    },
+    "FIG09": {
+        "conversions_to_save_clds_at": [
+            0.4,
+            0.8
+        ],
+        "k_fp": 0.0,
+        "k_tc": 0.0,
+        "k_pstar": 0.05
+    }
+}
