@@ -23,11 +23,10 @@ feel free to contact me for a PDF copy of my bachelor thesis, written in the ger
   Custom parameters override the specified "DEFAULT" parameters.
   
 ### Examples
-Varying the number of pivots used in the algorithm, the Polydispersity index (PDI) of the polymer mixture is plotted in (a) and the gel fraction g (number of chains above a certain size, characterizing the gel phase) (b) are plotted as a function of the conversion X (fraction of the number of monomers having reacted polymers). Reference simulation data from BSM02: 
+  * Varying the number of pivots used in the algorithm, the Polydispersity index (PDI) of the polymer mixture is plotted in (a) and the gel fraction g (number of chains above a certain size, characterizing the gel phase) (b) are plotted as a function of the conversion X (fraction of the number of monomers having reacted polymers). Reference simulation data from [BSM02]: 
 ![](./samples/output_pngs/58221_FIG07ab(FIG06)dispersitygelfraction.png)
 
-
-For three different stages during the reaction process (degree of conversion X), the Chain-Length Distribution (CLD) is plotted as a function the chain length, i.e. the size = number of monomers, built into the molecule: 
+  * For three different stages during the reaction process (degree of conversion X), the Chain-Length Distribution (CLD) is plotted as a function the chain length, i.e. the size = number of monomers, built into the molecule: 
 ![](./samples/output_pngs/02305_FIG06clds.png)
 
 ## Dependencies
