@@ -65,17 +65,17 @@ def fig8(my_kr):
     ref_x, ref_y = np.loadtxt("paper_ref_data/butteFig8a-DashDotted-nbarimax2e6.csv",
                               skiprows=1, delimiter=',', unpack=True)
     ax1.plot(ref_x, ref_y,
-             label=r"Butté et al., $\bar{n}_{i_\mathrm{max}} = \num{2e6}$", linestyle='-', color='k')
+             label=r"reference simulated curve, $\bar{n}_{i_\mathrm{max}} = \num{2e6}$", linestyle='-', color='k')
 
     ref_x, ref_y = np.loadtxt("paper_ref_data/butteFig8a-DashDotted-nbarimax5e6.csv",
                               skiprows=1, delimiter=',', unpack=True)
     ax1.plot(ref_x, ref_y,
-             label=r"Butté et al., $\bar{n}_{i_\mathrm{max}} = \num{5e6}$", linestyle='--', color='k')
+             label=r"reference simulated curve, $\bar{n}_{i_\mathrm{max}} = \num{5e6}$", linestyle='--', color='k')
 
     ref_x, ref_y = np.loadtxt("paper_ref_data/butteFig8a-DashDotted-nbarimax1e7.csv",
                               skiprows=1, delimiter=',', unpack=True)
     ax1.plot(ref_x, ref_y,
-             label=r"Butté et al., $\bar{n}_{i_\mathrm{max}} = \num{1e7}$", linestyle='-.', color='k')
+             label=r"reference simulated curve, $\bar{n}_{i_\mathrm{max}} = \num{1e7}$", linestyle='-.', color='k')
 
     # for gelfraction, collect line data from plots,
     # so a subplot containing a zoomed area an be created
@@ -83,17 +83,17 @@ def fig8(my_kr):
     ref_x, ref_y = np.loadtxt("paper_ref_data/butteFig8b-DashDotted-nbarimax2e6.csv",
                               skiprows=1, delimiter=',', unpack=True)
     line1 = plt.Line2D(
-        ref_x, ref_y, label=r"Butté et al., $\bar{n}_{i_\mathrm{max}} = \num{2e6}$", linestyle='-', color='k')
+        ref_x, ref_y, label=r"reference simulated curve, $\bar{n}_{i_\mathrm{max}} = \num{2e6}$", linestyle='-', color='k')
 
     ref_x, ref_y = np.loadtxt("paper_ref_data/butteFig8b-DashDotted-nbarimax5e6.csv",
                               skiprows=1, delimiter=',', unpack=True)
     line2 = plt.Line2D(
-        ref_x, ref_y, label=r"Butté et al., $\bar{n}_{i_\mathrm{max}} = \num{5e6}$", linestyle='--', color='k')
+        ref_x, ref_y, label=r"reference simulated curve, $\bar{n}_{i_\mathrm{max}} = \num{5e6}$", linestyle='--', color='k')
 
     ref_x, ref_y = np.loadtxt("paper_ref_data/butteFig8b-DashDotted-nbarimax1e7.csv",
                               skiprows=1, delimiter=',', unpack=True)
     line3 = plt.Line2D(
-        ref_x, ref_y, label=r"Butté et al., $\bar{n}_{i_\mathrm{max}} = \num{1e7}$", linestyle='-.', color='k')
+        ref_x, ref_y, label=r"reference simulated curve, $\bar{n}_{i_\mathrm{max}} = \num{1e7}$", linestyle='-.', color='k')
 
     lines_gelfraction = [line1, line2, line3]
     for index, c_nbar_imax in enumerate(nbar_imax_list):
@@ -107,12 +107,12 @@ def fig8(my_kr):
         # dispersity -- actually plot (creates Line2D and assigns to axes, fig.)
         x, y = evolution_data_unit_dict[ax1_bundle_name].get_xy_vectors()
         ax1.plot(x, y, linestyle=linestyle_list[index],
-                 label=r"eigene Daten, $\bar{n}_{i_\mathrm{max}} = " + r"\num{{{0:.0E}}}$".format(c_nbar_imax), color="C1")
+                 label=r"own simulated curve, $\bar{n}_{i_\mathrm{max}} = " + r"\num{{{0:.0E}}}$".format(c_nbar_imax), color="C1")
 
         # gel fraction -- don't assign Line2D with axes or figure, just create it
         x, y = evolution_data_unit_dict["gelfraction"].get_xy_vectors()
         line = plt.Line2D(x, y, linestyle=linestyle_list[index],
-                          label=r"eigene Daten, $\bar{n}_{i_\mathrm{max}} = " + r"\num{{{0:.0E}}}$".format(c_nbar_imax))
+                          label=r"own simulated curve, $\bar{n}_{i_\mathrm{max}} = " + r"\num{{{0:.0E}}}$".format(c_nbar_imax))
 
         lines_gelfraction.append(line)
 

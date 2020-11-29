@@ -186,7 +186,7 @@ def compare_rfp_cld_fig6(my_kr):
             CLDs=first2_clds, refdatas=[],
             labels={
                 "config_and_bundle_str": "Fig06-own-clds-increasing-imax",
-                "ref": "Butté et al.",
+                "ref": "reference simulated curve",
                 "own": ""
             },
             kr_obj=my_kr, mpl_axes=ax1, 

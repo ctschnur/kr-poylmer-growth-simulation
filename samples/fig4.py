@@ -40,11 +40,11 @@ def fig4(my_kr):
         skiprows=1, delimiter=',', unpack=True)
 
     ax.plot(x_ref, y_ref, ".", markersize=5, alpha=0.8, color="k",
-            label="Butté et al.")
+            label="reference simulated curve")
 
     # bundle data
     x, y = evolution_data_unit_dict[bundle_name].get_xy_vectors()
-    ax.plot(x, y, linestyle='-', label="eigene Daten")
+    ax.plot(x, y, linestyle='-', label="simulated")
 
     ax.grid()
     ax.legend(loc="best")
@@ -67,7 +67,8 @@ def fig4(my_kr):
             }
         ],
         labels={"config_and_bundle_str": config_title + "_clds",
-                "ref": "Butté et al.", "own": "eigene Daten"},
+                "ref": "reference simulated curve",
+                "own": "simulated"},
         kr_obj=my_kr, mpl_figure=fig_clds, savefig=True, savefig_pgf=True)
 
 

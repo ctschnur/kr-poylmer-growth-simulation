@@ -53,8 +53,8 @@ def fig6_7ab(my_kr):
         clds, refdatas=refdatas_cld,
         labels={
             "config_and_bundle_str": config_and_bundle_str,
-            "ref": "Butté et al.",
-            "own": "eigene Daten"
+            "ref": "reference simulated curve",
+            "own": "own simulated curve"
         },
         kr_obj=my_kr, savefig=True, savefig_pgf=True)
 
@@ -83,10 +83,10 @@ def fig6_7ab(my_kr):
     ref_x, ref_y = np.loadtxt("paper_ref_data/butteFig7a-KR-solid.csv",
                               skiprows=1, delimiter=',', unpack=True)
     ax1.plot(ref_x, ref_y, ".", markersize=5, alpha=0.8, color="k",
-             label="Butté et al.")
+             label="reference simulated curve")
 
     x, y = evolution_data_unit_dict[bundle_name].get_xy_vectors()
-    ax1.plot(x, y, linestyle='-', label="eigene Daten")
+    ax1.plot(x, y, linestyle='-', label="own simulated curve")
 
     # --- gelfraction
     bundle_name = "gelfraction"
@@ -100,11 +100,11 @@ def fig6_7ab(my_kr):
     ref_x, ref_y = np.loadtxt("paper_ref_data/butteFig7b-KR-solid.csv",
                               skiprows=1, delimiter=',', unpack=True)
     plt.plot(ref_x, ref_y, ".", markersize=5, alpha=0.8, color="k",
-             label="Butté et al.")
+             label="reference simulated curve")
 
     # bundle data
     x, y = evolution_data_unit_dict[bundle_name].get_xy_vectors()
-    plt.plot(x, y, linestyle='-', label="eigene Daten")
+    plt.plot(x, y, linestyle='-', label="own simulated curve")
 
     ax1.grid()
     ax2.grid()

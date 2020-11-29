@@ -90,7 +90,7 @@ def compare_imax_fig6(my_kr):
             CLDs=first2_clds, refdatas=[],
             labels={
                 "config_and_bundle_str": "Fig06-own-clds-increasing-imax",
-                "ref": "Butté et al.",
+                "ref": "reference simulated curve",
                 "own": ""
             },
             kr_obj=my_kr, savefig_pgf=True, mpl_figure=fig_clds,
@@ -125,7 +125,7 @@ def compare_imax_fig6(my_kr):
     ref_x, ref_y = np.loadtxt("paper_ref_data/butteFig7a-KR-solid.csv",
                               skiprows=1, delimiter=',', unpack=True)
     ax1.plot(ref_x, ref_y, ".", markersize=5, alpha=0.8, color="k",
-             label=("Butté et al." + ", " +
+             label=("reference simulated curve" + ", " +
                     imax_snu.set_num(400).get_latex_senu(dollars=True)))
 
     for index, c_evolution in enumerate(evolutions_list):
@@ -146,7 +146,7 @@ def compare_imax_fig6(my_kr):
     ref_x, ref_y = np.loadtxt("paper_ref_data/butteFig7b-KR-solid.csv",
                               skiprows=1, delimiter=',', unpack=True)
     ax2.plot(ref_x, ref_y, ".", markersize=5, alpha=0.8, color="k",
-             label=("Butté et al." + ", " +
+             label=("reference simulated curve" + ", " +
                     imax_snu.set_num(400).get_latex_senu(dollars=True)))
 
     for index, c_evolution in enumerate(evolutions_list):
@@ -222,7 +222,7 @@ def compare_imax_fig6(my_kr):
     ref_x, ref_y = np.loadtxt("paper_ref_data/butteFig7a-KR-solid.csv",
                               skiprows=1, delimiter=',', unpack=True)
     ax1.plot(ref_x, ref_y, ".", markersize=5, alpha=0.8, color="k",
-             label=("Butté et al." + ", " +
+             label=("reference simulated curve" + ", " +
                     imax_snu.set_num(400).get_latex_senu(dollars=True)))
 
     for index, c_evolution in enumerate(evolutions_list[:]):
@@ -250,7 +250,7 @@ def compare_imax_fig6(my_kr):
     ref_x, ref_y = np.loadtxt("paper_ref_data/butteFig7b-KR-solid.csv",
                               skiprows=1, delimiter=',', unpack=True)
     ax2.plot(ref_x, ref_y, ".", markersize=5, alpha=0.8, color="k",
-             label=("Butté et al." + ", " +
+             label=("reference simulated curve" + ", " +
                     imax_snu.set_num(400).get_latex_senu(dollars=True)))
 
     for index, c_evolution in enumerate(evolutions_list[:]):
@@ -274,7 +274,7 @@ def compare_imax_fig6(my_kr):
     ref_x, ref_y = np.loadtxt("paper_ref_data/butteFig6-KR-solid-80PercentConversion.csv",
                               skiprows=1, delimiter=',', unpack=True)
     ax3.plot(ref_x, ref_y, ".", markersize=5, alpha=0.8, color="k",
-             label=("Butté et al." + ", " + "$X = 0.8$, " +
+             label=("reference simulated curve" + ", " + "$X = 0.8$, " +
                     imax_snu.set_num(400).get_latex_senu(dollars=True)))
 
     # clds_list (only 100 and 400)

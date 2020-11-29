@@ -52,15 +52,15 @@ def fig5(my_kr):
     ax.set_xlabel("$X$")
     ax.set_ylabel("$\mathrm{PDI}$")
 
-    # reference data
-    ref_x, ref_y = np.loadtxt("paper_ref_data/butteFig5b-KR1000pointssolid.csv",
-                              skiprows=1, delimiter=',', unpack=True)
-    ax.plot(ref_x, ref_y, ".", markersize=5, alpha=0.8, color="k",
-            label=r"Butté et al.")
+    # # reference data
+    # ref_x, ref_y = np.loadtxt("paper_ref_data/butteFig5b-KR1000pointssolid.csv",
+    #                           skiprows=1, delimiter=',', unpack=True)
+    # ax.plot(ref_x, ref_y, ".", markersize=5, alpha=0.8, color="k",
+    #         label=r"reference simulated curve")
 
     # bundle data
     x, y = evolution_data_unit_dict[bundle_name].get_xy_vectors()
-    ax.plot(x, y, linestyle='-', label="eigene Daten")
+    ax.plot(x, y, linestyle='-', label="simulated")
 
     ax.grid()
     ax.legend(loc='upper left')
@@ -73,15 +73,16 @@ def fig5(my_kr):
     Plot_utility.plot_clds(
         clds,
         refdatas=[
-            {
-                "data": np.loadtxt(
-                    "paper_ref_data/butteFig5a-KR1000pointssolid.csv",
-                    skiprows=1, delimiter=','),
-                "label": "$X=0.6$"
-            }
+            # {
+            #     "data": np.loadtxt(
+            #         "paper_ref_data/butteFig5a-KR1000pointssolid.csv",
+            #         skiprows=1, delimiter=','),
+            #     "label": "$X=0.6$"
+            # }
         ],
         labels={"config_and_bundle_str": "FIG05-1000",
-                "ref": r"Butté et al.", "own": "eigene Daten"},
+                # "ref": r"reference simulated curve",
+                "own": "simulated"},
         kr_obj=my_kr, savefig=True, savefig_pgf=True, mpl_figure=fig_clds)
 
 

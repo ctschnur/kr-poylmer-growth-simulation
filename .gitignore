@@ -1,0 +1,2 @@
+*.png
+!samples/output_pngs/*.png

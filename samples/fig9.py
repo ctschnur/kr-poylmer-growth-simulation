@@ -53,8 +53,8 @@ def fig9(my_kr):
         clds, refdatas=refdatas_cld,
         labels={
             "config_and_bundle_str": config_and_bundle_str,
-            "ref": "Butté et al.",
-            "own": "eigene Daten"
+            "ref": "reference simulated curve",
+            "own": "own simulated curve"
         },
         kr_obj=my_kr)
 
