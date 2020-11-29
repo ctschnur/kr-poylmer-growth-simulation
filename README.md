@@ -87,6 +87,12 @@ python3 fig4.py
 The simulation is run and figures are produced (`.png` and `.pgf` files are put into the working directory).
 When opening a fresh terminal window, the `PYTHONPATH` must be re-set according to the above instructions. 
 
+## UML class diagram
+This program was written to be extensible in order to add more reaction mechanisms to the model. To achieve this, it 
+was written in a modular way. 
+
+![](./doc/uml.png)
+
 ## References
 
 - [BSM02]: 
