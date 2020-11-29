@@ -21,6 +21,13 @@ feel free to contact me for a PDF copy of my bachelor thesis, written in the ger
   `samples/conf.json` is a configuration file containing standard simulation
   parameters ("DEFAULT") and custom simulation parameters (i.e. "FIG06").
   Custom parameters override the specified "DEFAULT" parameters.
+  
+### Examples
+- Varying the number of pivots used in the algorithm, the Polydispersity index (PDI) of the polymer mixture is plotted in (a) and the gel fraction g (number of chains above a certain size, characterizing the gel phase) (b) are plotted as a function of the conversion X (fraction of the number of monomers having reacted polymers). Reference simulation data from BSM02: 
+![](./samples/output_pngs/58221_FIG07ab(FIG06)dispersitygelfraction.png)
+
+- For three different stages during the reaction process (degree of conversion X), the Chain-Length Distribution (CLD) is plotted as a function the chain length, i.e. the size = number of monomers, built into the molecule
+![](./samples/output_pngs/02305_FIG06clds.png)
 
 ## Dependencies
 The test modules (.py files in the `samples` folder) were executed successfully 
@@ -79,10 +86,6 @@ python3 fig4.py
 ```
 The simulation is run and figures are produced (`.png` and `.pgf` files are put into the working directory).
 When opening a fresh terminal window, the `PYTHONPATH` must be re-set according to the above instructions. 
-
-### two examples
-![Varying the number of pivots used in the algorithm, the Polydispersity index (PDI) of the polymer mixture is plotted in (a) and the gel fraction g (number of chains above a certain size, characterizing the gel phase) (b) are plotted as a function of the conversion X (fraction of the number of monomers having reacted polymers). Reference simulation data from BSM02](./samples/output_pngs/58221_FIG07ab(FIG06)dispersitygelfraction.png)
-![For three different stages during the reaction process (degree of conversion X), the Chain-Length Distribution (CLD) is plotted as a function the chain length, i.e. the size = number of monomers, built into the molecule](./samples/output_pngs/02305_FIG06clds.png)
 
 ## References
 
