@@ -24,9 +24,11 @@ feel free to contact me for a PDF copy of my bachelor thesis, written in the ger
   
 ### Examples
   * Varying the number of pivots used in the algorithm, the Polydispersity index (PDI) (a) and the gel fraction g (number of chains above a certain size, characterizing the gel phase) (b) of the polymer mixture are plotted as a function of the conversion X (fraction of the number of monomers having reacted polymers). Reference simulation data from [BSM02]: 
+  
 ![](./samples/output_pngs/58221_FIG07ab(FIG06)dispersitygelfraction.png)
 
   * For three different stages during the reaction process (increasing degrees of conversion X), the Chain-Length Distribution (CLD) is plotted, where n is the chain length (i.e. the size of the molecule = number of monomers built into the molecule) and P_n is the population of chains of length n in the mixture: 
+  
 ![](./samples/output_pngs/02305_FIG06clds.png)
 
 ## Dependencies
