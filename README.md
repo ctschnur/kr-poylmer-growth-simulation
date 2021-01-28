@@ -3,7 +3,7 @@ This module implements (in python) a method for simulating the growth of polymer
 It solves a large set of coupled rate equations (chemical kinetics) for the population of molecules in a mixture, 
 as a function of the number of elements (monomers) of those molecules. 
 
-This implementation is largely based on the theory laid out in the paper by reference simulated curve [[BSM02](http://dx.doi.org/10.1002/1521-3919(20020101)11:1<22::AID-MATS22>3.0.CO;2-Z)], 
+This implementation is largely based on the theory laid out in [[BSM02](http://dx.doi.org/10.1002/1521-3919(20020101)11:1<22::AID-MATS22>3.0.CO;2-Z)], 
 where a mathematical method by Kumar, Ramkrishna 
 [[KR96a](https://doi.org/10.1016/0009-2509(96)88489-2), [KR96b](https://doi.org/10.1016/0009-2509(95)00355-X), [KR97](https://doi.org/10.1016/S0009-2509(97)00307-2)] (KR-method) 
 is used to calculate the Chain-Length Distribution (CLD) during free-radical bulk polymerisation. 
